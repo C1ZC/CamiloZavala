@@ -1,0 +1,107 @@
+:root {
+  --active-nav-blue: #11abb0;
+  --hover-gray: #818081;
+  --normal-gray: #d0d1d1;
+  --normal-black: #000;
+  --normal-white: #fff;
+  --soft-gray: #eee;
+  --starts-gray: #e5e5e5;
+  --dowload-orange: #f06000;
+}
+.about-description {
+  color: var(--normal-white);
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
+  color: var(--normal-white);
+}
+
+.s-about {
+  background: url("../../assets/image/stars.svg"), var(--normal-black);
+  background-repeat: repeat;
+}
+
+.about-description {
+  background-color: var(--normal-black);
+}
+
+.center {
+  text-align: center;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--normal-white);
+}
+
+.row.s-about__content-bottom {
+  margin-bottom: 50px;
+}
+
+.s-resume.target-section {
+  background: url("../../assets/image/stars.svg"), var(--starts-gray);
+  background-repeat: repeat;
+}
+
+.s-resume.target-section h3 {
+  background-color: var(--starts-gray);
+}
+
+.s-resume.target-section strong {
+  background-color: var(--starts-gray);
+}
+
+#skills {
+  margin: 0 0 0 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.stiker {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  transition: 0.4s;
+}
+
+.stiker:hover {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+#btn-donwload-cv {
+  border: solid 1px transparent;
+  background-color: var(--active-nav-blue);
+  color: var(--normal-white);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#btn-donwload-cv:hover {
+  background-color: var(--dowload-orange);
+}
+
+.skill-grid {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 100px));
+  grid-gap: 30px 60px;
+}
+
+.skill-grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  transition: 0.4s;
+}

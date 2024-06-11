@@ -1,0 +1,44 @@
+:root {
+  --active-nav-blue: #11abb0;
+  --hover-gray: #818081;
+  --normal-gray: #d0d1d1;
+  --normal-black: #000;
+  --normal-white: #fff;
+  --soft-gray: #eee;
+  --starts-gray: #e5e5e5;
+  --dowload-orange: #f06000;
+}
+.s-contact {
+  background: url("../../assets/image/stars.svg"), var(--normal-black);
+  background-repeat: repeat;
+  width: 100vw;
+}
+.black-background {
+  background-color: var(--normal-black);
+}
+.s-contact.target-section h5 {
+  color: var(--active-nav-blue);
+}
+
+.stiker2 {
+  max-width: 45px;
+  /* max-height: 40px; */
+  min-width: 20px;
+  /* min-height: 20px; */
+  margin: 0 0 0 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-block__content span a {
+  font-size: 2.4rem;
+}
+
+#ContactNetwork-Container {
+  margin: 0 auto;
+}

@@ -1,0 +1,39 @@
+:root {
+  --hover-gray: #818081;
+}
+
+.PageError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background: url("../../assets/image/stars.svg"), #000;
+  background-repeat: repeat;
+}
+
+.error-img {
+  width: 400px;
+  border-radius: 100%;
+}
+
+@media (max-width: 400px) {
+  .error-img {
+    width: 320px;
+  }
+}
+
+.PageError h1 {
+  margin: 40px;
+}
+.btn-home {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-home:hover {
+  background-color: var(--hover-gray);
+}

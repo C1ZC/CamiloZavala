@@ -1,0 +1,19 @@
+:root {
+  --active-nav-blue: #11abb0;
+  --background-header: #262626;
+}
+
+.layout {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  /* background-color: black; */
+  background-color: var(--background-header);
+  top: 0;
+}
+
+.current {
+  color: var(--active-nav-blue) !important;
+  /* Algo en la hoja de estilos de la plantilla me está chocando al aplicar el color en el NavLink */
+  font-weight: 600;
+}
