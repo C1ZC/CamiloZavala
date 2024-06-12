@@ -1,42 +1,36 @@
-# Portafolio digital Creado con React
+# Personal Portfolio Website in React
 
-Hola, bienvenidos al repositorio de mi portafolio digital.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Comenzando 🚀
+<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
 
-Para hacerlo funcionar, te invito a clonar o forkear el repo. Una vez descargado, abre la terminal de comandos y ubicate en la carpeta del proyecto.
+Built using:
 
-## Scripts Disponibles📌
+- Front-end library: React
+- CSS framework: React-bootstrap
+- CSS animations library: Animate.css
 
-En el directorio del proyecto puedes ejecutar:
-
-### `npm i ó npm install`
-Para instalar todas las dependencias que requiere el proyecto para funcionar.
+In the /personal-portfolio, you can run:
 
 ### `npm start`
 
-Corre la aplicación en modo desarrollo un tu servidor local en tu computadora.
-Abre [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Una vez realizado todos los cambios deseados con este comando crearas un bundle optimizado del proyecto listo para desplegar a producción.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `npm run deploy`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-El proyecto tiene una pequeña comfiguración para hacer el despliegue del proyecto en gh-pages en modo producción. Si usted desea modificar el proyecto para desplegar su propia app, debe cambiar en el archivo package.json la propiedad "homepage", de la siguiente manera: "homepage": "https://nombre-usuario.github.io/nombre-repositorio"
-
-## Despliegue 📦
-
-Podrás visitar mi portafolio en el siguiente enlace: https://dbriceno10.github.io/portfolio
-
-## Construido con 🛠️
-
-HTML, CSS, JavaScript, React.
-
-El formulario de contacto se conecta a un api externa para guardar los datos en una base de datos, desarrollada con Node, Express y MongoDB.
-
-<img src="./public/home-portfolio.png"/>
-
----
-⌨️ con ❤️ por [dbriceno10](https://github.com/dbriceno10) 😊
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

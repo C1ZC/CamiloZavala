@@ -22,14 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-proyecto-rick-and-morty-api
-my-great-portfolio
-Ceevee_2_0_0
-space-badges
-ignora raiz
-ignora componentes
-ignora public
-colors.css
-sw
-sw.js
-package-lock.json
+# environment variables
+.env

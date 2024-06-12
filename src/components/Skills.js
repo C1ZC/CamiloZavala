@@ -1,154 +1,64 @@
-import React from "react";
-import Skill from "./Skill";
-import htmlStiker from "../assets/image/html.png";
-import cssStiker from "../assets/image/css-logo.png";
-import javascriptStiker from "../assets/image/javascript-logo-svg-vector.svg";
-import figmaStiker from "../assets/image/figma-1-logo-svg-vector.svg";
-import reactStiker from "../assets/image/react-logo22.png";
-import gitStiker from "../assets/image/git-logo2.png";
-import nodeStiker from "../assets/image/nodejs-icon-logo-svg-vector.svg";
-import expressStiker from "../assets/image/express.png";
-import typescriptStiker from "../assets/image/typescript-programming-language.svg";
-import mongodbtStiker from "../assets/image/mongo.png";
-import reduxStiker from "../assets/image/redux.svg";
-import psqlStiker from "../assets/image/postgresql-icon.svg";
-import sequelizeStiker from "../assets/image/sequelizejs-icon.svg";
-import bootstrapStiker from "../assets/image/bootstrap-5-1.svg";
-import sassStiker from "../assets/image/sass-1.svg";
-import nextStiker from "../assets/image/next-js.svg";
-import grapgqlStiker from "../assets/image/graphql.svg";
-import materialStiker from "../assets/image/material-ui-1.svg";
-import vueStiker from "../assets/image/vue-js-1.svg";
-import nestStiker from '../assets/image/nestjs.svg'
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import arrow1 from "../assets/img/arrow1.svg";
+import arrow2 from "../assets/img/arrow2.svg";
+import colorSharp from "../assets/img/color-sharp.png"
 
-const Skills = () => {
+export const Skills = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
   return (
-    <section className="s-resume target-section">
-      <div className="row s-resume__section ">
-        <div className="column  tab-12">
-          <h3 id="skills" className="section-header-allcaps">
-            Skills
-          </h3>
+    <section className="skill" id="skills">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="skill-bx wow zoomIn">
+                        <h2>Skills</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Brand Identity</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" />
+                                <h5>Logo Design</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                        </Carousel>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="column large-10 tab-12">
-          <div className="resume-block">
-            <ul className="skill-bars-fat skill-grid">
-              <Skill
-                skill="HTML"
-                src={htmlStiker}
-                title="HTML"
-                alt="html-logo"
-              />
-              <Skill skill="CSS" src={cssStiker} title="CSS" alt="css-logo" />
-              <Skill
-                skill="bootstrap"
-                src={bootstrapStiker}
-                title="Bootstrap"
-                alt="bootstrap-logo"
-              />
-              <Skill
-                skill="sass"
-                src={sassStiker}
-                title="Sass"
-                alt="sass-logo"
-              />
-              <Skill
-                skill="JavaScript"
-                src={javascriptStiker}
-                title="JavaScript"
-                alt="javascript-logo"
-              />
-              <Skill
-                skill="TypeScript"
-                src={typescriptStiker}
-                title="TypeScript"
-                alt="typescript-logo"
-              />
-              <Skill
-                skill="React"
-                src={reactStiker}
-                title="React Js - React Native"
-                alt="react-logo"
-              />
-              <Skill
-                skill="Next"
-                src={nextStiker}
-                title="Next Js"
-                alt="next-logo"
-              />
-              <Skill
-                skill="Vue"
-                src={vueStiker}
-                title="Vue Js"
-                alt="vue-logo"
-              />
-              <Skill
-                skill="MUI"
-                src={materialStiker}
-                title="Material-UI"
-                alt="material-ui-logo"
-              />
-              <Skill
-                skill="Redux"
-                src={reduxStiker}
-                title="Redux"
-                alt="rexu-logo"
-              />
-              <Skill
-                skill="Node"
-                src={nodeStiker}
-                title="Node Js"
-                alt="node-logo"
-              />
-              <Skill
-                skill="Express"
-                src={expressStiker}
-                title="Express Js"
-                alt="express-logo"
-              />
-              <Skill
-                skill="Nest"
-                src={nestStiker}
-                title="Nest Js"
-                alt="nest-logo"
-              />
-              <Skill
-                skill="GraphQL"
-                src={grapgqlStiker}
-                title="GraphQL"
-                alt="graphql-logo"
-              />
-              <Skill
-                skill="MongoDB"
-                src={mongodbtStiker}
-                title="MongoDB"
-                alt="mongodb-leaf-logo"
-              />
-              <Skill
-                skill="Postgresql"
-                src={psqlStiker}
-                title="PostgreSQL"
-                alt="psql-logo"
-              />
-              <Skill
-                skill="Sequelize"
-                src={sequelizeStiker}
-                title="Sequelize"
-                alt="sequelize-logo"
-              />
-              <Skill skill="Git" src={gitStiker} title="Git" alt="git-logo" />
-              <Skill
-                skill="Figma"
-                src={figmaStiker}
-                title="Figma"
-                alt="figma-logo"
-              />
-            </ul>
-          </div>
-        </div>
-      </div>
+        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  );
-};
-
-export default Skills;
+  )
+}
