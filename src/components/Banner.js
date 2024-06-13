@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import cv from "../assets/CV/Camilo_CV.pdf";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "Web Designer", "Front-End Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -62,7 +63,8 @@ export const Banner = () => {
                     aplicaciones móviles. Busco unirme a una organización tecnológica
                     donde pueda aplicar mis conocimientos y contribuir al desarrollo de
                     soluciones innovadoras.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <a href={cv} download>
+                  <button>Descargar CV <ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>

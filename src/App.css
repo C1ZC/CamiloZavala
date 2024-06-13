@@ -329,7 +329,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 100px; /* Cambia esto al ancho que desees */
+  height: 100px; /* Cambia esto a la altura que desees */
+  object-fit: contain; /* Esto asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
   margin: 0 auto 15px auto;
 }
 .background-image-left {
