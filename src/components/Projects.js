@@ -6,39 +6,58 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+//import { useRef } from "react";
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Aplicacion Web RRHH",
+      description: "Pequeña aplicacion web para gestionar recursos humanos, crearda en React, Spring Boot y MySQL como base de datos, desplegada en Railway",
       imgUrl: projImg1,
+      repoUrl: "https://github.com/C1ZC/rrss", // URL del repositorio
+      appUrl: "https://rrss-production.up.railway.app/", // URL de la aplicación
+  
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      repoUrl: "https://github.com/usuario/proyecto1", // URL del repositorio
+      appUrl: "https://www.proyecto1.com", // URL de la aplicación
+  
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      repoUrl: "https://github.com/usuario/proyecto1", // URL del repositorio
+      appUrl: "https://www.proyecto1.com", // URL de la aplicación
+  
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      repoUrl: "https://github.com/usuario/proyecto1", // URL del repositorio
+      appUrl: "https://www.proyecto1.com", // URL de la aplicación
+  
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      repoUrl: "https://github.com/usuario/proyecto1", // URL del repositorio
+      appUrl: "https://www.proyecto1.com", // URL de la aplicación
+  
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      repoUrl: "https://github.com/usuario/proyecto1", // URL del repositorio
+      appUrl: "https://www.proyecto1.com", // URL de la aplicación
+  
     },
   ];
 
@@ -79,7 +98,7 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
+                    <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
