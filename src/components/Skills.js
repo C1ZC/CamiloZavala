@@ -14,6 +14,8 @@ import meter13 from "../assets/img/php.png";
 import meter14 from "../assets/img/android.svg";
 import meter15 from "../assets/img/java.svg";
 import meter16 from "../assets/img/spring.png";
+import meter17 from "../assets/img/cpanel.png";
+import meter18 from "../assets/img/cloudflare.png";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -114,6 +116,14 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={meter10} alt="Visual Studio Code" />
                                 <h5>Visual Studio Code</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter17} alt="Cpanel" />
+                                <h5>Cpanel</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter18} alt="Cloudflare" />
+                                <h5>Cloudflare</h5>
                             </div>
                         </Carousel>
                     </div>
