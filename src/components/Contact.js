@@ -28,7 +28,9 @@ export const Contact = () => {
                 <p>Aunque mi camino en desarrollo acaba de comenzar, mis proyectos hablan por sí solos y motivado por el aprendizaje constante. Descubre mis proyectos y veamos cómo podemos colaborar.</p>
 
                 <div className="social-icon">
-                  <a onClick={() => window.location.href='mailto:camilo.zavala.c@gmail.com?subject=contacto&body='}><img src={navIcon4} alt="Correo" /></a>
+                <button onClick={() => window.location.href='mailto:camilo.zavala.c@gmail.com?subject=contacto&body='} style={{background: 'none', border: 'none', padding: 0, cursor: 'pointer'}}>
+                    <img src={navIcon4} alt="Correo" />
+                  </button>
                   <a href="https://www.linkedin.com/in/camilo-zavala-cornejo/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
                 </div>
                 
