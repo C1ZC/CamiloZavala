@@ -1,21 +1,40 @@
-import { Col } from "react-bootstrap";
+import React, { useState } from 'react';
+import './ProjectCard.css';
 
-export const ProjectCard = ({ title, description, imgUrl, repoUrl, appUrl, }) => {
+const ProjectCard = ({ project }) => {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
+ 
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span><br /><br />
-        <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-outline-dark">Repositorio</button>
+    <div className="project-item">
+      <img
+        src={project.imgUrl}
+        alt={project.title}
+        onClick={toggleFullscreen}
+        className={isFullscreen ? 'fullscreen' : ''}
+      />
+      <div className="project-details">
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <div className="project-skills">
+          {project.skills && project.skills.map((skill, index) => (
+            <span key={index} className="badge badge-secondary">{skill}</span>
+          ))}
+        </div>
+        <div className="project-buttons">
+          <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+            <button type="button" className="btn btn-outline-dark">Repositorio</button>
           </a>
-          <a href={appUrl} target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-outline-dark">Visualizar App</button>
+          <a href={project.appUrl} target="_blank" rel="noopener noreferrer">
+            <button type="button" className="btn btn-outline-dark">Visualizar App</button>
           </a>
         </div>
       </div>
-    </Col>
-  )
-}
+    </div>
+  );
+};
+
+export default ProjectCard;

@@ -1,0 +1,8 @@
+.ban-img{
+  transition: transform 0.3s ease-in-out;
+}
+  
+.ban-img img:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
