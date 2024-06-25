@@ -11,7 +11,9 @@ export const Newsletter = () => {
         <div className="newsletter-bx wow slideInUp">
           <Row>
             <Col lg={12} md={6} xl={5}>
-              <h4 className="1">camilo.zavala.c@gmail.com <button class="btn btn-primary" type="button" onClick={copyToClipboard}>Copiar</button></h4>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <h4 style={{ margi: 0 }}>camilo.zavala.c@gmail.com <button class="btn btn-primary" type="button" onClick={copyToClipboard}>Copiar</button></h4>
+              </div>
               
             </Col>
             <Col md={6} xl={7}>
