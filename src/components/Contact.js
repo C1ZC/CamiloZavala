@@ -24,7 +24,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Les's Connect</h2>
+                <h2>Lest's Connect</h2>
                 <p>Aunque mi camino en desarrollo acaba de comenzar, mis proyectos hablan por sí solos y motivado por el aprendizaje constante. Descubre mis proyectos y veamos cómo podemos colaborar.</p>
 
                 <div className="social-icon">
