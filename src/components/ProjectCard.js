@@ -26,10 +26,10 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="project-buttons">
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-            <button type="button" className="btn btn-outline-dark">Repositorio</button>
+            <button type="button" className="btn btn-secondary">Repositorio</button>
           </a>
           <a href={project.appUrl} target="_blank" rel="noopener noreferrer">
-            <button type="button" className="btn btn-outline-dark">Visualizar App</button>
+            <button type="button" className="btn btn-info">Visualizar App</button>
           </a>
         </div>
       </div>

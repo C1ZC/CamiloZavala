@@ -7,6 +7,9 @@ import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
 import projImg4 from '../assets/img/project-img4.png';
+import projImg5 from '../assets/img/project-img5.png';
+import projImg6 from '../assets/img/project-img6.png';
+import projImg7 from '../assets/img/project-img7.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
@@ -40,8 +43,8 @@ export const Projects = () => {
     },
     {
       title: "Camilo Zavala HERPM13051 S9",
-      description: "Aplicación Android desarrollada en Kotlin, incluye una pantalla inicial con animación y menú, un listado de vendedores y una funcionalidad de reproducción de audio al seleccionar un vendedor específico. También permite capturar y guardar fotos y visualizar un gráfico de ventas.",
-      imgUrl: projImg4,
+      description: "Aplicación Android desarrollada en Kotlin, la aplicación permite registrar, eliminar y listar desde una API de productos. Además, utiliza SQLite para el almacenamiento persistente de datos, muestra un grafico con los 5 productos más vendidos.",
+      imgUrl: projImg7,
       repoUrl: "https://github.com/C1ZC/camilo_zavala_herpm13051_s9", // URL del repositorio
       appUrl: "https://youtu.be/sz3H5cJS4yE", // URL de la aplicación
       skills: ['Kotlin', 'Android Studio','Java','SQLite','API']
@@ -57,7 +60,7 @@ export const Projects = () => {
     {
       title: "Camilo Zavala HERPM13051 S6",
       description: "Aplicación Android desarrollada en Kotlin, la aplicación permite registrar, modificar y listar infracciones en locales comerciales. Utiliza SQLite para el almacenamiento persistente de datos y facilita la compartición de información con otras aplicaciones.",
-      imgUrl: projImg4,
+      imgUrl: projImg5,
       repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s6", // URL del repositorio
       appUrl: "https://www.youtube.com/watch?v=FaLr9l4oWjg", // URL de la aplicación
       skills: ['Kotlin', 'Android Studio','Java', 'SQLite']
@@ -65,7 +68,7 @@ export const Projects = () => {
     {
       title: "Camilo Zavala HERPM13051 S7",
       description: "Aplicación Android desarrollada en Kotlin, la aplicación permite funcionalidades como obtención de días feriados desde una API pública, visualización de los datos en forma de lista, una pantalla de bienvenida (SplashScreen), y un sistema de autenticación que almacena las preferencias del usuario para mantener la sesión iniciada. Además, ofrece la opción de cerrar sesión con un solo clic.",
-      imgUrl: projImg4,
+      imgUrl: projImg6,
       repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s7", // URL del repositorio
       appUrl: "https://youtu.be/NxfkyU2xynw", // URL de la aplicación
       skills: ['Kotlin', 'Android Studio','Java','API','ScreenSplash']
