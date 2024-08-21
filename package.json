@@ -12,6 +12,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "nodemailer": "^6.7.5",
+    "personal-portfolio": "file:",
     "react": "^18.1.0",
     "react-bootstrap": "^2.10.3",
     "react-bootstrap-icons": "^1.8.2",

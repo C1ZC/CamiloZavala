@@ -476,7 +476,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .newsletter-bx h4 {
   font-weight: 700;
@@ -496,20 +498,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
-.new-email-bx h4, .new-email-bx button {
-  word-wrap: break-word; /* Asegura que el texto no se salga del contenedor */
-  margin-bottom: 10px; /* Añade un espacio entre el texto y el botón */
-  
-}
-@media (max-width: 768px) {
-  .new-email-bx h4, .new-email-bx button {
-    font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
-    padding: 5px 10px; /* Ajusta el padding del botón para que sea más pequeño */
-  }
+.new-email-bx h4 {
+  word-wrap: break-word;
+  text-align: center;
 }
 .new-email-bx::before {
   content: "";
+  display: inline-block; /* Ajusta el tamaño del before al contenido */
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   border-radius: 20px;
   position: absolute;
@@ -519,6 +516,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: -1px;
   right: -1px;
 }
+
+
 .new-email-bx::after {
   content: "";
   background: #fff;
@@ -530,14 +529,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   right: 0;
 }
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
+
 .new-email-bx button {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 10px 45px;
@@ -546,6 +538,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
 .footer img {
   width: 26%;
 }
