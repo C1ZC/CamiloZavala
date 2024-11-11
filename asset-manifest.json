@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CamiloZavala/static/css/main.829cd6b3.css",
-    "main.js": "/CamiloZavala/static/js/main.8193c201.js",
+    "main.css": "/CamiloZavala/static/css/main.878eab4e.css",
+    "main.js": "/CamiloZavala/static/js/main.5df46780.js",
     "static/js/453.298f5782.chunk.js": "/CamiloZavala/static/js/453.298f5782.chunk.js",
     "static/media/color-sharp.png": "/CamiloZavala/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/CamiloZavala/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -16,6 +16,7 @@
     "static/media/project-img7.png": "/CamiloZavala/static/media/project-img7.55048817d10374a38802.png",
     "static/media/DIPLOMA EN DESARROLLO WEB.png": "/CamiloZavala/static/media/DIPLOMA EN DESARROLLO WEB.b923de37c744c756b70f.png",
     "static/media/DIPLOMA EN PROGRAMACIÓN AVANZADA -1.png": "/CamiloZavala/static/media/DIPLOMA EN PROGRAMACIÓN AVANZADA -1.ab8c09df29d41972684b.png",
+    "static/media/project-img9.png": "/CamiloZavala/static/media/project-img9.13ec4aa12bdb654b7138.png",
     "static/media/project-img6.png": "/CamiloZavala/static/media/project-img6.1d3c46ea1c3232460072.png",
     "static/media/CentraNo2-Bold.ttf": "/CamiloZavala/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/python.svg.png": "/CamiloZavala/static/media/python.svg.f0c9d64775aac23759fe.png",
@@ -25,6 +26,7 @@
     "static/media/project-img4.png": "/CamiloZavala/static/media/project-img4.1ecb42f6662061cd790e.png",
     "static/media/footer-bg.png": "/CamiloZavala/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/spring.png": "/CamiloZavala/static/media/spring.f3122107dc29dc95530b.png",
+    "static/media/project-img8.png": "/CamiloZavala/static/media/project-img8.848c7f4554725425bec5.png",
     "static/media/project-img5.png": "/CamiloZavala/static/media/project-img5.b7ea34b37cabb439a7e6.png",
     "static/media/project-img1.png": "/CamiloZavala/static/media/project-img1.512b06f4cbb7bead71e4.png",
     "static/media/contact-img.svg": "/CamiloZavala/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
@@ -52,12 +54,12 @@
     "static/media/git.svg": "/CamiloZavala/static/media/git.6d27b5e0cde4ddb87e031ca706aa8350.svg",
     "static/media/css3.svg": "/CamiloZavala/static/media/css3.06533f6451c44d5650d0794c5e948108.svg",
     "static/media/html5.svg": "/CamiloZavala/static/media/html5.87f3f64abde68319b96661c04229b687.svg",
-    "main.829cd6b3.css.map": "/CamiloZavala/static/css/main.829cd6b3.css.map",
-    "main.8193c201.js.map": "/CamiloZavala/static/js/main.8193c201.js.map",
+    "main.878eab4e.css.map": "/CamiloZavala/static/css/main.878eab4e.css.map",
+    "main.5df46780.js.map": "/CamiloZavala/static/js/main.5df46780.js.map",
     "453.298f5782.chunk.js.map": "/CamiloZavala/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.829cd6b3.css",
-    "static/js/main.8193c201.js"
+    "static/css/main.878eab4e.css",
+    "static/js/main.5df46780.js"
   ]
 }
