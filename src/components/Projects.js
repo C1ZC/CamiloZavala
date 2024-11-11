@@ -20,10 +20,10 @@ export const Projects = () => {
     {
       title: "Chat Assistente",
       description: "Este es un proyecto chat assitente de token ChatGPT, con login y registro clasico, mas login y registro google conectado a un callback con supabase, base de datos usada en supabase, frontend es vue.js y el backend en python",
-      imgUrl: projImg8,
+      imgUrl: projImg9,
       repoUrl: "https://youtu.be/H8E6JcF-_5U", // URL del repositorio
       appUrl: "https://youtu.be/S4m0CCRt2tA", // URL de la aplicación
-      skills: ['Python', 'CSS', 'JavaScript','Vue,js','PostgreSql']
+      skills: ['Python', 'CSS', 'JavaScript','Vue,js','Supabase']
     },
     {
       title: "Lexia Demo",
