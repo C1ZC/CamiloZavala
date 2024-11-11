@@ -470,16 +470,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
+  padding: 85px 30px;
+  margin-top: 20px;
   background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
+
 .newsletter-bx h4 {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -488,6 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: contain;
   text-align: center;
   padding: 10px;
+  margin-bottom: 15px;
 }
 .new-email-bx {
   background: #fff;
@@ -498,11 +497,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 20px;
 }
 .new-email-bx h4 {
   word-wrap: break-word;
   text-align: center;
+  margin-bottom: 15px;
 }
 .new-email-bx::before {
   content: "";
@@ -515,6 +515,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: -1px;
   bottom: -1px;
   right: -1px;
+  padding: 0 20px;
 }
 
 

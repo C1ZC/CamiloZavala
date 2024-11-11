@@ -10,11 +10,30 @@ import projImg4 from '../assets/img/project-img4.png';
 import projImg5 from '../assets/img/project-img5.png';
 import projImg6 from '../assets/img/project-img6.png';
 import projImg7 from '../assets/img/project-img7.png';
+import projImg8 from '../assets/img/project-img8.png';
+import projImg9 from '../assets/img/project-img9.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Chat Assistente",
+      description: "Este es un proyecto chat assitente de token ChatGPT, con login y registro clasico, mas login y registro google conectado a un callback con supabase, base de datos usada en supabase, frontend es vue.js y el backend en python",
+      imgUrl: projImg8,
+      repoUrl: "https://youtu.be/H8E6JcF-_5U", // URL del repositorio
+      appUrl: "https://youtu.be/S4m0CCRt2tA", // URL de la aplicación
+      skills: ['Python', 'CSS', 'JavaScript','Vue,js','PostgreSql']
+    },
+    {
+      title: "Lexia Demo",
+      description: "Participe Full Stack en este proyecto Lexia para un cliente,  ya creado como base, se adaptó para su  empresa Lenguajes usados son Python en back-end,  Vue.js en front-end.",
+      imgUrl: projImg8,
+      repoUrl: "https://youtu.be/-4qU89dSH2A", // URL del repositorio
+      appUrl: "https://youtu.be/FkuQClc1e5M", // URL de la aplicación
+      skills: ['Python', 'CSS', 'JavaScript','Vue,js','PostgreSql']
+    },
+
     {
       title: "Aplicacion Web RRHH",
       description: "Pequeña aplicacion web para gestionar recursos humanos, crearda en React, Spring Boot y MySQL como base de datos, desplegada en Railway",
