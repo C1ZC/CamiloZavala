@@ -79,7 +79,8 @@ export const Banner = () => {
                 <h1>{`Hola Soy Camilo`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Front End Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Soy un profesional en Ingeniería Informática con una formación integral en desarrollo de software, 
                     redes y seguridad, desarrollo web y aplicaciones móviles. Mi objetivo es unirme a una 
-                    organización tecnológica donde pueda aplicar mis conocimientos y contribuir al desarrollo de soluciones innovadoras.</p>
+                    organización tecnológica donde pueda aplicar mis conocimientos y contribuir al desarrollo 
+                    de soluciones innovadoras.</p>
                   <a href={cv} download>
                   <button>Descargar CV <ArrowRightCircle size={25} /></button></a>
                   <div className="mt-4 ban-img">
