@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/CamiloZavala/static/css/main.878eab4e.css",
-    "main.js": "/CamiloZavala/static/js/main.80fc55f2.js",
+    "main.js": "/CamiloZavala/static/js/main.760aa227.js",
     "static/js/453.298f5782.chunk.js": "/CamiloZavala/static/js/453.298f5782.chunk.js",
     "static/media/color-sharp.png": "/CamiloZavala/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/CamiloZavala/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/UC-165c323b-3602-4683-82fd-1e9559c6b039-1.png": "/CamiloZavala/static/media/UC-165c323b-3602-4683-82fd-1e9559c6b039-1.3ba4038044e1d2015e41.png",
     "static/media/Camilo Ignacio Zavala Cornejo - 2024-06-10-1.png": "/CamiloZavala/static/media/Camilo Ignacio Zavala Cornejo - 2024-06-10-1.9da870a8c611a7c15ca6.png",
     "static/media/Camilo Ignacio Zavala Cornejo - 2024-05-27-1.png": "/CamiloZavala/static/media/Camilo Ignacio Zavala Cornejo - 2024-05-27-1.b3b469d24f11b3fa7e5a.png",
+    "static/media/project-img10.png": "/CamiloZavala/static/media/project-img10.b459171832dd227f7dab.png",
     "static/media/certificado tecnico nivel medio-1.png": "/CamiloZavala/static/media/certificado tecnico nivel medio-1.a66e914e992fc44a22a4.png",
     "static/media/banner-bg.png": "/CamiloZavala/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/CamiloZavala/static/media/header-img.400baa4260daac98f2b2b1ccf08761c2.svg",
@@ -55,11 +56,11 @@
     "static/media/css3.svg": "/CamiloZavala/static/media/css3.06533f6451c44d5650d0794c5e948108.svg",
     "static/media/html5.svg": "/CamiloZavala/static/media/html5.87f3f64abde68319b96661c04229b687.svg",
     "main.878eab4e.css.map": "/CamiloZavala/static/css/main.878eab4e.css.map",
-    "main.80fc55f2.js.map": "/CamiloZavala/static/js/main.80fc55f2.js.map",
+    "main.760aa227.js.map": "/CamiloZavala/static/js/main.760aa227.js.map",
     "453.298f5782.chunk.js.map": "/CamiloZavala/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.878eab4e.css",
-    "static/js/main.80fc55f2.js"
+    "static/js/main.760aa227.js"
   ]
 }
