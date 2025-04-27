@@ -13,6 +13,7 @@ import projImg7 from '../assets/img/project-img7.png';
 import projImg8 from '../assets/img/project-img8.png';
 import projImg9 from '../assets/img/project-img9.png';
 import projImg10 from '../assets/img/project-img10.png';
+import projImg11 from '../assets/img/project-img11.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
@@ -42,6 +43,15 @@ export const Projects = () => {
       repoUrl: "https://github.com/C1ZC/lector_facturas", // URL del repositorio
       appUrl: "https://www.youtube.com/watch?v=6_T9MchPnqY", // No aplica para escritorio, puedes dejarlo vacío o poner el README
       skills: ['Python', 'PyQt5', 'pdfplumber', 'openpyxl', 'Automatización', 'Excel']
+    },
+
+    {
+      title: "WhatsApp Mensajería desde Excel",
+      description: "Aplicación de escritorio para envío masivo de mensajes de WhatsApp a contactos importados desde archivos Excel. Permite filtrar destinatarios, personalizar mensajes y llevar historial de envíos. Desarrollada en Python con PyQt y SQLite.",
+      imgUrl: projImg11, // Puedes cambiar la imagen si tienes una captura de la app
+      repoUrl: "https://github.com/C1ZC/whatsapp-mensajeria-excel", // Cambia por la URL real de tu repositorio si la tienes
+      appUrl: "", // No aplica para escritorio, puedes dejarlo vacío o poner un enlace a la documentación
+      skills: ['Python', 'PyQt5', 'SQLite', 'Pandas', 'Excel', 'pywhatkit']
     },
 
     {
