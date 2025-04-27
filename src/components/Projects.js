@@ -12,6 +12,7 @@ import projImg6 from '../assets/img/project-img6.png';
 import projImg7 from '../assets/img/project-img7.png';
 import projImg8 from '../assets/img/project-img8.png';
 import projImg9 from '../assets/img/project-img9.png';
+import projImg10 from '../assets/img/project-img10.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
@@ -32,6 +33,15 @@ export const Projects = () => {
       repoUrl: "https://youtu.be/-4qU89dSH2A", // URL del repositorio
       appUrl: "https://youtu.be/FkuQClc1e5M", // URL de la aplicación
       skills: ['Python', 'CSS', 'JavaScript','Vue,js','PostgreSql']
+    },
+
+    {
+      title: "Extractor de Datos de Clientes PDF",
+      description: "Aplicación de escritorio para extraer datos de clientes desde facturas PDF y guardarlos en Excel. Desarrollada en Python con PyQt5, pdfplumber y openpyxl. Permite procesar múltiples archivos, corrige formatos de RUT y teléfono, y evita duplicados.",
+      imgUrl: projImg10, // Puedes cambiar la imagen por una relacionada a tu app
+      repoUrl: "https://github.com/C1ZC/lector_facturas", // URL del repositorio
+      appUrl: "https://www.youtube.com/watch?v=6_T9MchPnqY", // No aplica para escritorio, puedes dejarlo vacío o poner el README
+      skills: ['Python', 'PyQt5', 'pdfplumber', 'openpyxl', 'Automatización', 'Excel']
     },
 
     {
