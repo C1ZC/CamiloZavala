@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CamiloZavala/static/css/main.878eab4e.css",
-    "main.js": "/CamiloZavala/static/js/main.e3f15f53.js",
+    "main.css": "/CamiloZavala/static/css/main.4e7216de.css",
+    "main.js": "/CamiloZavala/static/js/main.6b533796.js",
     "static/js/453.298f5782.chunk.js": "/CamiloZavala/static/js/453.298f5782.chunk.js",
     "static/media/color-sharp.png": "/CamiloZavala/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/CamiloZavala/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -9,6 +9,7 @@
     "static/media/Camilo Ignacio Zavala Cornejo - 2024-06-10-1.png": "/CamiloZavala/static/media/Camilo Ignacio Zavala Cornejo - 2024-06-10-1.9da870a8c611a7c15ca6.png",
     "static/media/Camilo Ignacio Zavala Cornejo - 2024-05-27-1.png": "/CamiloZavala/static/media/Camilo Ignacio Zavala Cornejo - 2024-05-27-1.b3b469d24f11b3fa7e5a.png",
     "static/media/project-img10.png": "/CamiloZavala/static/media/project-img10.b459171832dd227f7dab.png",
+    "static/media/project-img12.jpg": "/CamiloZavala/static/media/project-img12.7357c1dc7d06f93bc630.jpg",
     "static/media/certificado tecnico nivel medio-1.png": "/CamiloZavala/static/media/certificado tecnico nivel medio-1.a66e914e992fc44a22a4.png",
     "static/media/project-img11.png": "/CamiloZavala/static/media/project-img11.3c7968983f121f7df67b.png",
     "static/media/banner-bg.png": "/CamiloZavala/static/media/banner-bg.cc1273af450504afe755.png",
@@ -24,12 +25,10 @@
     "static/media/CentraNo2-Medium.ttf": "/CamiloZavala/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/project-img2.png": "/CamiloZavala/static/media/project-img2.6502c3039af5b0af8e20.png",
     "static/media/CentraNo2-Book.ttf": "/CamiloZavala/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/project-img4.png": "/CamiloZavala/static/media/project-img4.1ecb42f6662061cd790e.png",
     "static/media/Camilo_CV.pdf": "/CamiloZavala/static/media/Camilo_CV.37a8350e507d66e60abc.pdf",
     "static/media/footer-bg.png": "/CamiloZavala/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/spring.png": "/CamiloZavala/static/media/spring.f3122107dc29dc95530b.png",
     "static/media/project-img8.png": "/CamiloZavala/static/media/project-img8.848c7f4554725425bec5.png",
-    "static/media/project-img5.png": "/CamiloZavala/static/media/project-img5.b7ea34b37cabb439a7e6.png",
     "static/media/project-img1.png": "/CamiloZavala/static/media/project-img1.512b06f4cbb7bead71e4.png",
     "static/media/contact-img.svg": "/CamiloZavala/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
     "static/media/project-img3.png": "/CamiloZavala/static/media/project-img3.3485fbc5efef4538e7d0.png",
@@ -56,12 +55,12 @@
     "static/media/git.svg": "/CamiloZavala/static/media/git.6d27b5e0cde4ddb87e031ca706aa8350.svg",
     "static/media/css3.svg": "/CamiloZavala/static/media/css3.06533f6451c44d5650d0794c5e948108.svg",
     "static/media/html5.svg": "/CamiloZavala/static/media/html5.87f3f64abde68319b96661c04229b687.svg",
-    "main.878eab4e.css.map": "/CamiloZavala/static/css/main.878eab4e.css.map",
-    "main.e3f15f53.js.map": "/CamiloZavala/static/js/main.e3f15f53.js.map",
+    "main.4e7216de.css.map": "/CamiloZavala/static/css/main.4e7216de.css.map",
+    "main.6b533796.js.map": "/CamiloZavala/static/js/main.6b533796.js.map",
     "453.298f5782.chunk.js.map": "/CamiloZavala/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.878eab4e.css",
-    "static/js/main.e3f15f53.js"
+    "static/css/main.4e7216de.css",
+    "static/js/main.6b533796.js"
   ]
 }
