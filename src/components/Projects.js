@@ -21,7 +21,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Pokémon App con Django y Postgrest/SQL Server (local)",
+      title: "Pokémon App con Django y SQL Server (local)",
       description: "Aplicación web para gestionar tu colección Pokémon usando la PokeAPI. Incluye login, filtros, vistas responsivas con Bootstrap 5 y persistencia en SQL Server. Totalmente funcional con autenticación, paginación y diseño adaptable.",
       imgUrl: projImg12, // Reemplaza con la imagen correspondiente
       repoUrl: "https://github.com/C1ZC/web_project", // URL del repositorio
