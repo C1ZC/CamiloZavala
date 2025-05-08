@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// Importing React and necessary components
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
