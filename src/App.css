@@ -34,6 +34,7 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,6 +122,7 @@ span.navbar-text {
 .social-icon {
     display: inline-block;
     margin-left: 14px;
+    margin-top: 20px;
 }
 .social-icon a {
     width: 42px;

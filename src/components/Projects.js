@@ -6,19 +6,28 @@ import 'react-multi-carousel/lib/styles.css';
 import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
-import projImg4 from '../assets/img/project-img4.png';
-import projImg5 from '../assets/img/project-img5.png';
+// import projImg4 from '../assets/img/project-img4.png';
+// import projImg5 from '../assets/img/project-img5.png';
 import projImg6 from '../assets/img/project-img6.png';
 import projImg7 from '../assets/img/project-img7.png';
 import projImg8 from '../assets/img/project-img8.png';
 import projImg9 from '../assets/img/project-img9.png';
 import projImg10 from '../assets/img/project-img10.png';
 import projImg11 from '../assets/img/project-img11.png';
+import projImg12 from '../assets/img/project-img12.jpg';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Pokémon App con Django y Postgrest/SQL Server (local)",
+      description: "Aplicación web para gestionar tu colección Pokémon usando la PokeAPI. Incluye login, filtros, vistas responsivas con Bootstrap 5 y persistencia en SQL Server. Totalmente funcional con autenticación, paginación y diseño adaptable.",
+      imgUrl: projImg12, // Reemplaza con la imagen correspondiente
+      repoUrl: "https://github.com/C1ZC/web_project", // URL del repositorio
+      appUrl: "https://web-project-newl.onrender.com/", // Puedes dejarlo vacío o poner una demo si tienes
+      skills: ['Python', 'Django', 'SQL Server', 'Bootstrap 5', 'PokeAPI']
+    },
     {
       title: "Chat Assistente",
       description: "Este es un proyecto chat assitente de token ChatGPT, con login y registro clasico, mas login y registro google conectado a un callback con supabase, base de datos usada en supabase, frontend es vue.js y el backend en python",
@@ -49,7 +58,7 @@ export const Projects = () => {
       title: "WhatsApp Mensajería desde Excel",
       description: "Aplicación de escritorio para envío masivo de mensajes de WhatsApp a contactos importados desde archivos Excel. Permite filtrar destinatarios, personalizar mensajes y llevar historial de envíos. Desarrollada en Python con PyQt y SQLite.",
       imgUrl: projImg11, // Puedes cambiar la imagen si tienes una captura de la app
-      repoUrl: "https://github.com/C1ZC/whatsapp-mensajeria-excel", // Cambia por la URL real de tu repositorio si la tienes
+      repoUrl: "https://github.com/C1ZC/lector_cartola_envia_wsp", // Cambia por la URL real de tu repositorio si la tienes
       appUrl: "", // No aplica para escritorio, puedes dejarlo vacío o poner un enlace a la documentación
       skills: ['Python', 'PyQt5', 'SQLite', 'Pandas', 'Excel', 'pywhatkit']
     },
@@ -88,22 +97,22 @@ export const Projects = () => {
       appUrl: "https://youtu.be/sz3H5cJS4yE", // URL de la aplicación
       skills: ['Kotlin', 'Android Studio','Java','SQLite','API']
     },
-    {
-      title: "Camilo Zavala HERPM13051 S5",
-      description: "Aplicación Android desarrollada en Kotlin, incluye una pantalla inicial con animación y menú, un listado de vendedores y una funcionalidad de reproducción de audio al seleccionar un vendedor específico. También permite capturar y guardar fotos y visualizar un gráfico de ventas.",
-      imgUrl: projImg4,
-      repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s5", // URL del repositorio
-      appUrl: "https://youtu.be/O6qlC0ZfX1Y?si=hPHghqF4CtwiJRIL", // URL de la aplicación
-      skills: ['Kotlin', 'Android Studio','Java']
-    },
-    {
-      title: "Camilo Zavala HERPM13051 S6",
-      description: "Aplicación Android desarrollada en Kotlin, la aplicación permite registrar, modificar y listar infracciones en locales comerciales. Utiliza SQLite para el almacenamiento persistente de datos y facilita la compartición de información con otras aplicaciones.",
-      imgUrl: projImg5,
-      repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s6", // URL del repositorio
-      appUrl: "https://www.youtube.com/watch?v=FaLr9l4oWjg", // URL de la aplicación
-      skills: ['Kotlin', 'Android Studio','Java', 'SQLite']
-    },
+    // {
+    //   title: "Camilo Zavala HERPM13051 S5",
+    //   description: "Aplicación Android desarrollada en Kotlin, incluye una pantalla inicial con animación y menú, un listado de vendedores y una funcionalidad de reproducción de audio al seleccionar un vendedor específico. También permite capturar y guardar fotos y visualizar un gráfico de ventas.",
+    //   imgUrl: projImg4,
+    //   repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s5", // URL del repositorio
+    //   appUrl: "https://youtu.be/O6qlC0ZfX1Y?si=hPHghqF4CtwiJRIL", // URL de la aplicación
+    //   skills: ['Kotlin', 'Android Studio','Java']
+    // },
+    // {
+    //   title: "Camilo Zavala HERPM13051 S6",
+    //   description: "Aplicación Android desarrollada en Kotlin, la aplicación permite registrar, modificar y listar infracciones en locales comerciales. Utiliza SQLite para el almacenamiento persistente de datos y facilita la compartición de información con otras aplicaciones.",
+    //   imgUrl: projImg5,
+    //   repoUrl: "https://github.com/C1ZC/camilo_zavala_HERPM13051_s6", // URL del repositorio
+    //   appUrl: "https://www.youtube.com/watch?v=FaLr9l4oWjg", // URL de la aplicación
+    //   skills: ['Kotlin', 'Android Studio','Java', 'SQLite']
+    // },
     {
       title: "Camilo Zavala HERPM13051 S7",
       description: "Aplicación Android desarrollada en Kotlin, la aplicación permite funcionalidades como obtención de días feriados desde una API pública, visualización de los datos en forma de lista, una pantalla de bienvenida (SplashScreen), y un sistema de autenticación que almacena las preferencias del usuario para mantener la sesión iniciada. Además, ofrece la opción de cerrar sesión con un solo clic.",
@@ -146,13 +155,15 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <h2>Proyectos</h2>
-            <p>Aquí puedes ver algunos de los proyectos en los que he trabajado. Junto con </p>
+            <p>
+              Aquí puedes ver algunos de los proyectos en los que he trabajado.
+              Espero que te gusten!
+            </p>
             <Carousel
               responsive={responsive}
               infinite={true}
               className="owl-carousel owl-theme project-carousel"
-              afterChange={() => setIsFullscreen(false)}
-            >
+              afterChange={() => setIsFullscreen(false)}>
               {projects.map((project, index) => (
                 <ProjectCard
                   key={index}
@@ -165,7 +176,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="Background" />
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="Background"
+      />
     </section>
   );
 };

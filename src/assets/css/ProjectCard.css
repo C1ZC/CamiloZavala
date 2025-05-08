@@ -1,0 +1,115 @@
+/* Agregar estilos para el carrusel y la nueva estructura de las tarjetas de proyecto */
+.project-carousel {
+  position: relative;
+  padding: 20px 0;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin: 20px;
+  background: #151515;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.project-item img {
+  max-width: 700px;
+  margin-right: 20px;
+  border-radius: 20px;
+  margin-right: 20px; /* Añadir un margen derecho para separar la imagen del contenido */
+  margin-bottom: 0; /* Eliminar el margen inferior */
+}
+
+.project-item img.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  max-height: 90%;
+  z-index: 1000;
+  border-radius: 0; /* Eliminar el borde redondeado */
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-content: center;
+  text-align: center;
+  width: fit-content;
+}
+
+.project-skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center; /* Centrar las habilidades */
+  font-size: 18px; /* Aumentar el tamaño de la fuente */
+  font-weight: bold; /* Aumentar el peso de la fuente */
+}
+
+.project-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centrar los botones */
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.zoomed {
+  transform: scale(2); /* Ajusta el valor de escala según necesites */
+  z-index: 20; /* Asegura que la imagen se muestre hacia adelante */
+  position: relative; /* Necesario para que z-index funcione */
+  animation: normal;
+}
+
+/* ProjectCard.css */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.fullscreen {
+  max-width: 90vw;
+  max-height: 80vh;
+  cursor: pointer;
+  box-shadow: 0 0 20px #000;
+}
+
+.close-fullscreen {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .project-item {
+    flex-direction: row;
+  }
+}
