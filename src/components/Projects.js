@@ -123,8 +123,6 @@ export const Projects = () => {
     }
 
   ];
-  const [currentProjectIndex] = useState(0);
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const responsive = {
     superLargeDesktop: {
@@ -145,9 +143,6 @@ export const Projects = () => {
     }
   };
 
-  const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen);
-  };
 
   return (
     <section className="project" id="projects">
@@ -162,14 +157,11 @@ export const Projects = () => {
             <Carousel
               responsive={responsive}
               infinite={true}
-              className="owl-carousel owl-theme project-carousel"
-              afterChange={() => setIsFullscreen(false)}>
+              className="owl-carousel owl-theme project-carousel">
               {projects.map((project, index) => (
                 <ProjectCard
                   key={index}
                   project={project}
-                  isFullscreen={isFullscreen && currentProjectIndex === index}
-                  toggleFullscreen={toggleFullscreen}
                 />
               ))}
             </Carousel>

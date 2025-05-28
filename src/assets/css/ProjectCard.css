@@ -1,115 +1,247 @@
-/* Agregar estilos para el carrusel y la nueva estructura de las tarjetas de proyecto */
-.project-carousel {
-  position: relative;
-  padding: 20px 0;
+/* Contenedor principal del carrusel */
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
+/* Estilo del carrusel */
+.project-carousel {
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 10px 0;
+}
+
+/* Tarjeta de proyecto - Columna en móvil por defecto */
 .project-item {
+  background: #181818;
+  border-radius: 64px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column; /* Vertical en móvil */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 28px 18px 22px 18px;
+  margin: 0 auto;
+  min-height: 450px;
+  max-width: 340px;
+  width: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.project-item:hover {
+  box-shadow: 0 4px 24px rgba(170,54,124,0.18);
+}
+
+/* Imagen del proyecto */
+.project-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 auto 18px auto;
+  background: #222;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+/* Detalles del proyecto */
+.project-details {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
-  margin: 20px;
-  background: #151515;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.project-item img {
-  max-width: 700px;
-  margin-right: 20px;
-  border-radius: 20px;
-  margin-right: 20px; /* Añadir un margen derecho para separar la imagen del contenido */
-  margin-bottom: 0; /* Eliminar el margen inferior */
-}
-
-.project-item img.fullscreen {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: auto;
-  max-height: 90%;
-  z-index: 1000;
-  border-radius: 0; /* Eliminar el borde redondeado */
-}
-
-.project-details {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  align-content: center;
   text-align: center;
-  width: fit-content;
 }
 
+.project-details h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.project-details p {
+  font-size: 0.95rem;
+  color: #b8b8b8;
+  margin-bottom: 12px;
+  text-align: center;
+  min-height: 60px;
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Habilidades del proyecto */
 .project-skills {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center; /* Centrar las habilidades */
-  font-size: 18px; /* Aumentar el tamaño de la fuente */
-  font-weight: bold; /* Aumentar el peso de la fuente */
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 0 5px;
 }
 
+.badge.badge-secondary {
+  background: rgba(170,54,124,0.2);
+  border-radius: 12px;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 0.85rem;
+  margin: 2px;
+}
+
+/* Botones de proyecto */
 .project-buttons {
-  margin-top: 20px;
   display: flex;
   gap: 10px;
-  justify-content: center; /* Centrar los botones */
-}
-
-.carousel-controls {
-  display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
+  width: 100%;
 }
 
-.zoomed {
-  transform: scale(2); /* Ajusta el valor de escala según necesites */
-  z-index: 20; /* Asegura que la imagen se muestre hacia adelante */
-  position: relative; /* Necesario para que z-index funcione */
-  animation: normal;
+.project-buttons button {
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.2s;
 }
 
-/* ProjectCard.css */
-.fullscreen-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.fullscreen {
-  max-width: 90vw;
-  max-height: 80vh;
-  cursor: pointer;
-  box-shadow: 0 0 20px #000;
-}
-
-.close-fullscreen {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 2.5rem;
-  color: #fff;
-  background: transparent;
+.btn-secondary {
+  background: #4A2FBD;
+  color: white;
   border: none;
-  cursor: pointer;
-  z-index: 10000;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
+.btn-info {
+  background: #AA367C;
+  color: white;
+  border: none;
+}
+
+.project-buttons button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Responsive para móvil - ya está en columna por defecto */
+@media (max-width: 576px) {
+  .project-carousel {
+    max-width: 300px;
+  }
+  
   .project-item {
-    flex-direction: row;
+    min-height: 320px;
+    padding: 18px 12px;
+  }
+
+  .project-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-details h3 {
+    font-size: 1rem;
+  }
+
+  .project-details p,
+  .project-skills {
+    display: none;
+  }
+}
+
+/* PANTALLA GRANDE: imagen a la izquierda, texto a la derecha */
+@media (min-width: 1200px) {
+  .project-carousel {
+    max-width: 1350px;
+  }
+  
+  .project-item {
+    flex-direction: row !important; /* HORIZONTAL en escritorio */
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 600px;
+    max-width: 1350px;
+    padding: 35px;
+    gap: 30px;
+  }
+  
+  .project-img {
+    width: 600px;
+    height: 400px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .project-details {
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+  
+  .project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .project-details p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+    min-height: 0;
+    max-height: none;
+  }
+  
+  .project-skills {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .project-buttons {
+    justify-content: flex-start;
+  }
+}
+
+/* Ajuste para tablets/desktop pequeño - aún en columna pero más grande */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .project-carousel {
+    max-width: 580px;
+  }
+  
+  .project-item {
+    min-height: 480px;
+    max-width: 480px;
+    padding: 28px 24px;
+  }
+  
+  .project-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Pantallas extra grandes - formato horizontal pero aún más ancho */
+@media (min-width: 1800px) {
+  .project-carousel {
+    max-width: 1200px;
+  }
+  
+  .project-item {
+    max-width: 1100px;
+    padding: 40px;
+    gap: 50px;
+  }
+  
+  .project-img {
+    width: 280px;
+    height: 280px;
   }
 }
