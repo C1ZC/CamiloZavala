@@ -654,43 +654,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-.btn-outline-dark{
-  margin-right: 10px;
+/************ Technologies Section ************/
+.technologies {
+  padding: 80px 0 50px 0;
+  position: relative;
+  background-color: #121212;
 }
 
-/* Responsive para .new-email-bx */
-@media (max-width: 900px) {
-  .new-email-bx {
-    max-width: 95%;
-    padding: 14px 6px;
-    margin: 18px auto 15px auto;
-  }
-  .new-email-bx h4 {
-    font-size: 1.1rem;
-  }
-  .new-email-bx button {
-    width: 100%;
-    min-width: 120px;
-    max-width: 220px;
-    font-size: 1rem;
-    padding: 10px 0;
-  }
+.technologies h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-@media (max-width: 600px) {
-  .new-email-bx {
-    max-width: 100%;
-    padding: 10px 2px;
-    margin: 12px 0 8px 0;
-    border-radius: 14px;
-  }
-  .new-email-bx h4 {
-    font-size: 1rem;
-    padding: 6px 2px;
-  }
-  .new-email-bx button {
-    font-size: 0.95rem;
-    padding: 10px 0;
-    border-radius: 12px;
-  }
+.technologies p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 120px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px);
+}
+
+.tech-icon {
+  width: 85px;
+  height: 85px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 15px rgba(170, 54, 124, 0.2);
+}
+
+.tech-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.tech-slide-item h5 {
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Personalización de las flechas y puntos del carrusel */
+.tech-carousel .react-multiple-carousel__arrow {
+  background: rgba(170, 54, 124, 0.6);
+}
+
+.tech-carousel .react-multiple-carousel__arrow:hover {
+  background: rgba(170, 54, 124, 0.9);
 }
