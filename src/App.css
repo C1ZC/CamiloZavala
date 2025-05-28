@@ -120,9 +120,7 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
-    display: inline-block;
-    margin-left: 14px;
-    margin-top: 20px;
+    display: flex;
 }
 .social-icon a {
     width: 42px;
@@ -340,16 +338,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider .item {
   margin: 5px; /* Agrega un margen alrededor de cada item para evitar que choquen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 8px;
+  box-sizing: border-box;
 }
+
 .skill-slider .item h5 {
+  font-size: 1rem;
   text-align: center;
+  margin: 0;
+  word-break: break-word;
 }
 .skill-slider .item img {
-  width: 350px; /* Cambia esto al ancho que desees */
-  height:350px; /* Cambia esto a la altura que desees */
-  object-fit: contain; /* Esto asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
-  padding: 40px;
-  align-items: center;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-bottom: 12px;
+  object-fit: contain;
 }
 
 
@@ -359,6 +369,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+@media (max-width: 900px) {
+  .skill-slider .item img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-slider .item {
+    padding: 10px 2px;
+  }
+  .skill-slider .item img {
+    max-width: 110px;
+  }
+  .skill-slider .item h5 {
+    font-size: 0.95rem;
+  }
 }
 
 /************ Projects Css ************/
@@ -465,12 +493,95 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 40px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .newsletter-bx {
+  margin-bottom: 30px;
+}
+
+.footer img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Asegura el centrado vertical */
+  gap: 18px;
+  margin-bottom: 10px;
+  min-height: 60px; /* Ajusta según el tamaño de tus íconos */
+}
+
+.footer .social-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(217, 217, 217, 0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.footer .social-icon img {
+  width: 55%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Responsive Footer */
+@media (max-width: 767px) {
+  .footer .newsletter-bx {
+    padding: 40px 10px;
+    border-radius: 30px;
+  }
+  .footer img {
+    width: 90px;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  .footer .social-icon {
+    gap: 12px;
+  }
+  .footer .text-center,
+  .footer .text-sm-end {
+    text-align: center !important;
+  }
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .col-12, .footer [class*="col-"] {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/************ Contact Css ************/
+
 .newsletter-bx {
   padding: 85px 30px;
   margin-top: 20px;
@@ -542,16 +653,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 
-.footer img {
-  width: 26%;
-}
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
+
 .btn-outline-dark{
   margin-right: 10px;
+}
+
+/* Responsive para .new-email-bx */
+@media (max-width: 900px) {
+  .new-email-bx {
+    max-width: 95%;
+    padding: 14px 6px;
+    margin: 18px auto 15px auto;
+  }
+  .new-email-bx h4 {
+    font-size: 1.1rem;
+  }
+  .new-email-bx button {
+    width: 100%;
+    min-width: 120px;
+    max-width: 220px;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .new-email-bx {
+    max-width: 100%;
+    padding: 10px 2px;
+    margin: 12px 0 8px 0;
+    border-radius: 14px;
+  }
+  .new-email-bx h4 {
+    font-size: 1rem;
+    padding: 6px 2px;
+  }
+  .new-email-bx button {
+    font-size: 0.95rem;
+    padding: 10px 0;
+    border-radius: 12px;
+  }
 }

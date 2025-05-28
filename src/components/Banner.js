@@ -31,7 +31,11 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "Front-End Developer" ];
+  const toRotate = [
+    "Full Stack Developer",
+    "Integración de IA",
+    "Desarrollador Python & JavaScript",
+  ];
   const period = 2000;
 
   useEffect(() => {
@@ -73,53 +77,161 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Bienvenid@ a mi Portafolio</span>
-                <h1>{`Hola Soy Camilo`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Front End Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Soy un profesional en Ingeniería Informática con una formación integral en desarrollo de software, 
-                    redes y seguridad, desarrollo web y aplicaciones móviles. Mi objetivo es unirme a una 
-                    organización tecnológica donde pueda aplicar mis conocimientos y contribuir al desarrollo 
-                    de soluciones innovadoras.</p>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }>
+                  <span className="tagline">Bienvenid@ a mi Portafolio</span>
+                  <h1>
+                    {`Hola, soy Camilo`}{" "}
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "Full Stack Developer", "Integración de IA", "Desarrollador Python & JavaScript" ]'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    Ingeniero Informático especializado en desarrollo Full Stack
+                    e integración de inteligencia artificial mediante APIs.
+                    Experiencia en automatización de procesos y despliegue de
+                    soluciones en la nube. He trabajado con tecnologías como
+                    Python, JavaScript, Django, FastAPI, Vue.js, React, Azure,
+                    Docker y bases de datos SQL/NoSQL. Mi objetivo es aportar
+                    soluciones innovadoras y escalables que optimicen la
+                    eficiencia y la experiencia de los usuarios, combinando
+                    habilidades técnicas y visión estratégica.
+                  </p>
                   <a href={cv} download>
-                  <button>Descargar CV <ArrowRightCircle size={25} /></button></a>
+                    <button className="btn">
+                      Descargar CV <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
                   <div className="mt-4 ban-img">
-                      <Col xs={12}>
-                        <Row>
-                          <Col xs={1} className="mb-3"><img src={meter1} alt="Postman" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter2} alt="Bootstrap" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter3} alt="CSS3" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter4} alt="Figma" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter5} alt="GitHub" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter6} alt="Git" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter7} alt="JavaScript" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter8} alt="MySQL" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter9} alt="React" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter10} alt="Visual Studio Code" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter11} alt="HTML5" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter12} alt="Python" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter13} alt="PHP" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter14} alt="Android Studio" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter15} alt="Java" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter16} alt="Spring Boot" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter17} alt="Cpanel" className="img-fluid"/></Col>
-                          <Col xs={1} className="mb-3"><img src={meter18} alt="Cloudflare" className="img-fluid"/></Col>
-                        </Row>
-                      </Col>
+                    <Col xs={12}>
+                      <Row>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter1}
+                            alt="Postman"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter2}
+                            alt="Bootstrap"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter3} alt="CSS3" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter4} alt="Figma" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter5}
+                            alt="GitHub"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter6} alt="Git" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter7}
+                            alt="JavaScript"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter8} alt="MySQL" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter9} alt="React" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter10}
+                            alt="Visual Studio Code"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter11}
+                            alt="HTML5"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter12}
+                            alt="Python"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter13} alt="PHP" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter14}
+                            alt="Android Studio"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img src={meter15} alt="Java" className="img-fluid" />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter16}
+                            alt="Spring Boot"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter17}
+                            alt="Cpanel"
+                            className="img-fluid"
+                          />
+                        </Col>
+                        <Col xs={1} className="mb-3">
+                          <img
+                            src={meter18}
+                            alt="Cloudflare"
+                            className="img-fluid"
+                          />
+                        </Col>
+                      </Row>
+                    </Col>
                   </div>
-              </div>}
+                </div>
+              )}
             </TrackVisibility>
-          </Col>     
+          </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn animated-img" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__zoomIn animated-img"
+                      : ""
+                  }>
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
+  );
 }
