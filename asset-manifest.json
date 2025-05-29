@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CamiloZavala/static/css/main.a7fbcba7.css",
-    "main.js": "/CamiloZavala/static/js/main.c9676180.js",
+    "main.css": "/CamiloZavala/static/css/main.203a58c9.css",
+    "main.js": "/CamiloZavala/static/js/main.d3d69096.js",
     "static/js/453.f9078622.chunk.js": "/CamiloZavala/static/js/453.f9078622.chunk.js",
     "static/media/color-sharp.png": "/CamiloZavala/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/CamiloZavala/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -55,12 +55,12 @@
     "static/media/git.svg": "/CamiloZavala/static/media/git.6d27b5e0cde4ddb87e031ca706aa8350.svg",
     "static/media/css3.svg": "/CamiloZavala/static/media/css3.06533f6451c44d5650d0794c5e948108.svg",
     "static/media/html5.svg": "/CamiloZavala/static/media/html5.87f3f64abde68319b96661c04229b687.svg",
-    "main.a7fbcba7.css.map": "/CamiloZavala/static/css/main.a7fbcba7.css.map",
-    "main.c9676180.js.map": "/CamiloZavala/static/js/main.c9676180.js.map",
+    "main.203a58c9.css.map": "/CamiloZavala/static/css/main.203a58c9.css.map",
+    "main.d3d69096.js.map": "/CamiloZavala/static/js/main.d3d69096.js.map",
     "453.f9078622.chunk.js.map": "/CamiloZavala/static/js/453.f9078622.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7fbcba7.css",
-    "static/js/main.c9676180.js"
+    "static/css/main.203a58c9.css",
+    "static/js/main.d3d69096.js"
   ]
 }
