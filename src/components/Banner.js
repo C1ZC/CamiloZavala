@@ -12,7 +12,6 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
   const [downloading, setDownloading] = useState(false);
   const toRotate = [
     "Full Stack Developer",
@@ -20,16 +19,6 @@ export const Banner = () => {
     "Desarrollador Python & JavaScript",
   ];
   const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -46,17 +35,24 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
     }
   };
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text]);
 
   const handleDownload = () => {
     setDownloading(true);
@@ -83,7 +79,7 @@ export const Banner = () => {
                     <br />{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
+                      dataperiod="1000"
                       data-rotate='[ "Full Stack Developer", "Integración de IA", "Desarrollador Python & JavaScript" ]'>
                       <span className="wrap">{text}</span>
                     </span>
