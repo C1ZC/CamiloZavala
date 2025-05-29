@@ -309,7 +309,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 60px 0 50px 0; /* Cambiar el padding-top de 0 a 60px */
   position: relative;
 }
 .skill-bx {
@@ -317,8 +317,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
-  
+  margin-top: 20px; /* Cambiar el margin-top negativo de -60px a 20px positivo */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 .skill h2 {
 	font-size: 45px;
@@ -656,9 +656,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Technologies Section ************/
 .technologies {
-  padding: 80px 0 50px 0;
+  padding: 80px 0 120px 0; /* Aumentar el padding-bottom de 50px a 120px */
   position: relative;
   background-color: #121212;
+  /* Agregar un degradado suave en la parte inferior para transición */
+  background-image: url('./assets/img/color-sharp.png');
+  background-position: left bottom;
+  background-size: 40%;
+  background-repeat: no-repeat;
 }
 
 .technologies h2 {
@@ -684,18 +689,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 1200px;
 }
 
-.tech-item {
+/* Arreglar los textos corridos y mejorar el diseño de cada item */
+.tech-slide-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  width: 120px;
-  margin-bottom: 30px;
-  transition: transform 0.3s;
+  justify-content: center;
+  padding: 10px 5px;
+  height: 160px; /* Altura ajustada para evitar texto corrido */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 120px;
+  transition: transform 0.3s ease;
+  animation: float 6s ease-in-out infinite;
 }
 
-.tech-item:hover {
-  transform: translateY(-10px);
+.tech-slide-item:nth-child(odd) {
+  animation-delay: 0s;
+}
+.tech-slide-item:nth-child(even) {
+  animation-delay: 3s;
+}
+
+/* Crear efecto flotante sutil para cada elemento */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .tech-icon {
@@ -729,13 +755,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #ffffff;
   text-align: center;
   margin-top: 8px;
-}
-
-/* Personalización de las flechas y puntos del carrusel */
-.tech-carousel .react-multiple-carousel__arrow {
-  background: rgba(170, 54, 124, 0.6);
-}
-
-.tech-carousel .react-multiple-carousel__arrow:hover {
-  background: rgba(170, 54, 124, 0.9);
 }

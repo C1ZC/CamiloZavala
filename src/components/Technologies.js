@@ -74,11 +74,14 @@ export const Technologies = () => {
           <Col xs={12} md={8} xl={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }>
                   <h2 className="text-center">Tecnologías</h2>
                   <p className="text-center">
-                    Estas son las principales tecnologías con las que he trabajado
-                    en mis proyectos profesionales y personales.
+                    Estas son las principales tecnologías con las que he
+                    trabajado en mis proyectos profesionales y personales.
                   </p>
                 </div>
               )}
@@ -89,21 +92,19 @@ export const Technologies = () => {
           <Col xs={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }>
                   <Carousel
                     responsive={responsive}
                     infinite={true}
-                    className="tech-carousel"
                     autoPlay={true}
                     autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="all .5s"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    dotListClass="custom-dot-list-style">
+                    arrows={false} // Añadir esta línea para quitar las flechas
+                    className="tech-carousel">
                     {technologies.map((tech, index) => (
-                      <div key={index} className="tech-slide-item">
+                      <div key={index} className="tech-slide-item tech-item">
                         <div className="tech-icon">
                           <img src={tech.img} alt={tech.name} />
                         </div>
