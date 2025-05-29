@@ -151,8 +151,7 @@ export const Projects = () => {
           <Col size={12}>
             <h2>Proyectos</h2>
             <p>
-              Aquí puedes ver algunos de los proyectos en los que he trabajado.
-              Espero que te gusten!
+              Esta sección muestra una selección de proyectos en los que he trabajado, abarcando diversas tecnologías y enfoques. Desde aplicaciones web hasta aplicaciones móviles, cada proyecto refleja mi compromiso con la calidad y la innovación. Explora los detalles de cada uno para conocer más sobre mi experiencia y habilidades.
             </p>
             <Carousel
               responsive={responsive}

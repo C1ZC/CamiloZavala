@@ -8,8 +8,8 @@ import meter7 from "../assets/img/certificado tecnico nivel medio-1.png";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-/**import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";**/
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -35,47 +35,90 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Certificados</h2>
-                        <p>Certificados, diplomas y cursos que he realizado<br></br></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Diploma en Desarrollo Web" />
-                                <h5>Desarrollo Web</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Diploma en Fundamentos de Programación y Bases de Datos" />
-                                <h5>Fundamentos de Programación y Bases de Datos</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Diploma en Programación Avanzada" />
-                                <h5>Programación Avanzada</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter4} alt="Certificado UC" />
-                                <h5>Certificado UC</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter5} alt="Certificado Camilo Ignacio Zavala Cornejo" />
-                                <h5>Camilo Ignacio Zavala Cornejo</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter6} alt="Certificado Camilo Ignacio Zavala Cornejo" />
-                                <h5>Camilo Ignacio Zavala Cornejo</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter7} alt="Certificado Técnico Nivel Medio" />
-                                <h5>Técnico Nivel Medio</h5>
-                            </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "skill-bx wow animate__animated animate__fadeIn"
+                      : "skill-bx"
+                  }>
+                  <h2>Certificados</h2>
+                  <p>
+                    Diplomas de cursos y certificados obtenidos en los cursos
+                    del Instituto IACC y en otros lugares. <br></br>
+                  </p>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        className={
+                          isVisible
+                            ? "animate__animated animate__slideInUp"
+                            : ""
+                        }>
+                        <Carousel
+                          responsive={responsive}
+                          infinite={true}
+                          className="owl-carousel owl-theme skill-slider">
+                          <div className="item">
+                            <img src={meter1} alt="Diploma en Desarrollo Web" />
+                            <h5>Desarrollo Web</h5>
+                          </div>
+                          <div className="item">
+                            <img
+                              src={meter2}
+                              alt="Diploma en Fundamentos de Programación y Bases de Datos"
+                            />
+                            <h5>
+                              Fundamentos de Programación y Bases de Datos
+                            </h5>
+                          </div>
+                          <div className="item">
+                            <img
+                              src={meter3}
+                              alt="Diploma en Programación Avanzada"
+                            />
+                            <h5>Programación Avanzada</h5>
+                          </div>
+                          <div className="item">
+                            <img src={meter4} alt="Certificado UC" />
+                            <h5>Certificado UC</h5>
+                          </div>
+                          <div className="item">
+                            <img
+                              src={meter5}
+                              alt="Certificado Camilo Ignacio Zavala Cornejo"
+                            />
+                            <h5>Camilo Ignacio Zavala Cornejo</h5>
+                          </div>
+                          <div className="item">
+                            <img
+                              src={meter6}
+                              alt="Certificado Camilo Ignacio Zavala Cornejo"
+                            />
+                            <h5>Camilo Ignacio Zavala Cornejo</h5>
+                          </div>
+                          <div className="item">
+                            <img
+                              src={meter7}
+                              alt="Certificado Técnico Nivel Medio"
+                            />
+                            <h5>Técnico Nivel Medio</h5>
+                          </div>
                         </Carousel>
-                    </div>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
-            </div>
+              )}
+            </TrackVisibility>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Imágenes" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Imágenes" />
     </section>
-  )
+  );
 }

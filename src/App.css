@@ -355,6 +355,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
+.skill-bx .item {
+  transition: transform 0.3s ease;
+}
+
+.skill-bx .item:hover {
+  transform: translateY(-10px);
+}
+.skill-slider {
+  animation: floatCarousel 6s ease-in-out infinite;
+}
 .skill-slider {
   width: 100%; /* Ajusta el ancho según sea necesario para acomodar los elementos con margen */
   margin: auto; /* Centra el slider en su contenedor */
