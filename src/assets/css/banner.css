@@ -6,3 +6,44 @@
     transform: scale(1.4);
     cursor: pointer;
 }
+
+.download-icon {
+  transition: all 0.3s ease;
+}
+
+.downloading button {
+  background: linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%);
+  animation: progress 2s linear;
+}
+
+@keyframes progress {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.download-dots:after {
+  content: '.';
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    content: '.';
+  }
+  40% {
+    content: '..';
+  }
+  60% {
+    content: '...';
+  }
+  80%, 100% {
+    content: '';
+  }
+}

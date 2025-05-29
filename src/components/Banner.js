@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import cv from "../assets/CV/Camilo_CV.pdf";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowRightCircle, Download } from "react-bootstrap-icons";
 import 'animate.css';
 import '../assets/css/banner.css';
 import TrackVisibility from "react-on-screen";
@@ -13,6 +13,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
+  const [downloading, setDownloading] = useState(false);
   const toRotate = [
     "Full Stack Developer",
     "Integración de IA",
@@ -25,33 +26,45 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
-    } else if (isDeleting && updatedText === '') {
+    } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
       setDelta(500);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setIndex((prevIndex) => prevIndex + 1);
     }
-  }
+  };
+
+  const handleDownload = () => {
+    setDownloading(true);
+
+    setTimeout(() => {
+      setDownloading(false);
+    }, 2000);
+  };
 
   return (
     <section className="banner" id="home">
@@ -66,7 +79,8 @@ export const Banner = () => {
                   }>
                   <span className="tagline">Bienvenid@ a mi Portafolio</span>
                   <h1>
-                    {`Hola, soy Camilo`}{" "}
+                    {`Hola, soy Camilo`}
+                    <br />{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -85,9 +99,22 @@ export const Banner = () => {
                     eficiencia y la experiencia de los usuarios, combinando
                     habilidades técnicas y visión estratégica.
                   </p>
-                  <a href={cv} download>
+                  <a
+                    href={cv}
+                    download
+                    onClick={handleDownload}
+                    className={downloading ? "downloading" : ""}>
                     <button className="btn">
-                      Descargar CV <ArrowRightCircle size={25} />
+                      {downloading ? (
+                        <>
+                          Descargando <span className="download-dots"></span>
+                        </>
+                      ) : (
+                        <>
+                          Descargar CV{" "}
+                          <Download size={25} className="download-icon" />
+                        </>
+                      )}
                     </button>
                   </a>
                 </div>
