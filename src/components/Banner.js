@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import cv from "../assets/CV/Camilo_CV.pdf";
-import { ArrowRightCircle, Download } from "react-bootstrap-icons";
+import { Download } from "react-bootstrap-icons"; 
 import 'animate.css';
 import '../assets/css/banner.css';
 import TrackVisibility from "react-on-screen";
