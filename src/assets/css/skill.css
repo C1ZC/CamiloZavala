@@ -1,0 +1,91 @@
+/************ Skills Css ************/
+.skill {
+  padding: 60px 0 50px 0; /* Cambiar el padding-top de 0 a 60px */
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: 20px; /* Cambiar el margin-top negativo de -60px a 20px positivo */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-bx .item {
+  transition: transform 0.3s ease;
+}
+
+.skill-bx .item:hover {
+  transform: translateY(-10px);
+}
+.skill-slider {
+  animation: floatCarousel 6s ease-in-out infinite;
+}
+.skill-slider {
+  width: 100%; /* Ajusta el ancho según sea necesario para acomodar los elementos con margen */
+  margin: auto; /* Centra el slider en su contenedor */
+  overflow: hidden; /* Oculta cualquier elemento que se desborde del contenedor */
+}
+.skill-slider .item {
+  margin: 5px; /* Agrega un margen alrededor de cada item para evitar que choquen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 8px;
+  box-sizing: border-box;
+}
+
+.skill-slider .item h5 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  word-break: break-word;
+}
+.skill-slider .item img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+@media (max-width: 900px) {
+  .skill-slider .item img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-slider .item {
+    padding: 10px 2px;
+  }
+  .skill-slider .item img {
+    max-width: 110px;
+  }
+  .skill-slider .item h5 {
+    font-size: 0.95rem;
+  }
+}

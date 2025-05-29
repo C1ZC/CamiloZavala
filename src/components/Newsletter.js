@@ -1,4 +1,5 @@
 import { Col, Row,} from "react-bootstrap";
+import '../assets/css/newsletter.css';
 
 export const Newsletter = () => {
   const copyToClipboard = () => {

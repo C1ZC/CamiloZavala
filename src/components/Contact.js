@@ -5,6 +5,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon4 from "../assets/img/nav-icon4.svg";
+import '../assets/css/contact.css';
 
 
 export const Contact = () => {

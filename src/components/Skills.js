@@ -11,6 +11,7 @@ import 'react-multi-carousel/lib/styles.css';
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import colorSharp from "../assets/img/color-sharp.png"
+import '../assets/css/skill.css';
 
 export const Skills = () => {
   const responsive = {

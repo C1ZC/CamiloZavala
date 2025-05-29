@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import '../assets/css/Technologies.css';
 
 // Importar íconos de tecnologías
 import postman from "../assets/img/postman.svg";
